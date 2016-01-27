@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * [wbsitemanager_menu description]
+ * @return [type] [description]
+ */
+  function wbsitemanager_menu() {
+
+    $items = array();
+
+    $items['admin/config/system/wbsitemanager'] = array(
+      'title'            => 'wbSiteManager',
+      'description'      => '...',
+      'page callback'    => 'drupal_get_form',
+      'page arguments'   => array('wbsitemanager_api_keys_settings'),
+      'access arguments' => array('administer site configuration'),
+      'file'             => 'wbsitemanager.admin.inc'
+    );
+
+    return $items;
+
+  }

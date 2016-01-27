@@ -1,0 +1,14 @@
+name = wbSiteManager
+description = Manage Updates Remotely
+package = "System"
+core = 7.x
+
+; Package
+project = "wbsitemanager"
+version = "7.x-0.1.0-alpha"
+core = "7.x"
+datestamp = "0000000000"
+
+; Configuration
+configure = admin/config/system/wbsitemanager
+
